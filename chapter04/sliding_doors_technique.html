@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sliding_doors_technique</title>
+	<style type="text/css">
+		.box {
+			font-size: 2em;
+			width: 20em;
+			background: url(images/bottom-left.gif) no-repeat bottom left;
+		}
+		.box .box_outer {
+			background: url(images/bottom-right.gif) no-repeat bottom right;
+		}
+		.box .box_outer .box_inner {
+			background: url(images/top-left.gif) no-repeat top left;
+		}
+		.box .box_outer .box_inner h2 {
+			background: url(images/top-right.gif) no-repeat top right;
+			padding: 20px 20px 0 20px;
+		}
+		.box .box_outer .box_inner p {
+			padding: 0px 20px 20px 20px;
+		}
+	</style>
+</head>
+
+<body>
+<div class="box">
+	<div class="box_outer">
+		<div class="box_inner">
+			<h2>Lorem Ipsum</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin venenatis turpis ut quam. In dolor. Nam ultrices nisl sollicitudin sapien. Ut lacinia aliquet ante.</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

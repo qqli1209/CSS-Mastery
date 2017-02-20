@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>External Links</title>
+<style type="text/css">
+
+/* pretty stuff
+================================== */
+
+body {
+  font: 120%/1.6 "Gill Sans", Futura, "Lucida Grande", Geneva, sans-serif;
+  color: #666;
+  background: #fff;
+}
+
+a:link, a:visited {
+  color:#666;
+}
+a[href^="http:"] {
+  padding-right: 10px;
+  background: url(images/externalLink.gif) no-repeat right top;
+}
+a[href^="http://www.andybudd.com"], a[href="http://andybudd.com"] {
+  padding-right: 0;
+  background-image: none;
+}
+a[href^="mailto"] {
+  padding-right: 15px;
+  background: url(images/email.png) no-repeat right top;
+}
+a[href^="aim:"] {
+  padding-right: 15px;
+  background: url(images/im.png) no-repeat right top;
+}
+a[href$=".pdf"] {
+  padding-right: 15px;
+  background: url(images/pdfLink.gif) no-repeat top right;
+}
+a[href$=".doc"], a[href$="docx"] {
+  padding-right: 15px;
+  background: url(images/wordLink.gif) no-repeat top right;
+}
+/* external links
+================================== */
+
+</style>
+</head>
+
+<body>
+<p><a href="http://www.google.com/">This is an external link</a></p>
+
+<p>And here is a reasonably long line of text containing  an <a href="http://www.andybudd.com/index.php">absolute internal link</a>, some text, an <a href="http://www.yahoo.com/">an external link</a>, some more text, a <a href="css-button.htm">relative internal link</a> and then some more text.</p>
+<p>Contact me by <a href="mailto:info@andybudd.com">email</a><br />
+Send me an <a href="aim:goim?screenname=andybudd">instant message</a> using AIM/iChat.</p>
+</p>
+<p>Here is your paper in PDF file: <a href="files/tri-view.pdf">tri-view.pdf</a> and in Microsoft Word file: <a href="files/tri-view.doc">tri-view.doc</a>.</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+		body {
+			font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+  			font-size: 1.4em;
+		}
+		ul.nav {
+			width: 8em;
+			padding: 0;
+			margin: 0;
+			float: left;
+			list-style-type: none;
+			border: 1px solid #486b02;
+			background-color: #8bd400;
+			border-bottom: none;
+		}
+		ul.li {
+			display: inline;
+		}
+		ul.nav a {
+			display: block;
+			text-decoration: none;
+			color: #2b3f00;
+			border-top: 1px solid #e4ffd3;
+			border-bottom: 1px solid #486b02;
+			padding: 0.3em 1em;
+			background: url(../images/arrow.gif) no-repeat 4% center;
+		}
+		ul.nav a.selected, ul.nav a:hover, ul.nav a:focus, ul.nav a:active {
+			color: #E4FFD3;
+			background-color: #6DA203;
+		}
+		body#home ul.nav a.home, 
+		body#news ul.nav a.news, 
+		body#about ul.nav a.about, 
+		body#contact ul.nav a.contact, 
+		body#ourServices ul.nav a.ourServices, 
+		body#ourWork ul.nav a.ourWork {
+			color: #E4FFD3;
+			background-color: #6DA203;
+		}

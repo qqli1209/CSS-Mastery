@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>simple form</title>
+	<style type="text/css">
+		body {
+			font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+		}
+		form {
+		  	font-size: 1.4em;
+			width: 30em;
+		}
+		fieldset {
+			margin: 1em 0;
+			padding: 1.3em 1em;
+			border: 1px solid #ccc;
+		}
+		label {
+			display: block;
+			cursor: pointer;
+		}
+		input#name,
+		input#email,
+		input#web {
+			margin-bottom: 1.1em;
+			width: 20em;
+			border-top: 2px solid #999;
+			border-left: 2px solid #999;
+			border-bottom: 2px solid #ccc;
+			border-right: 2px solid #ccc;
+		}
+		textarea {
+			border-top: 2px solid #999;
+			border-left: 2px solid #999;
+			border-bottom: 2px solid #ccc;
+			border-right: 2px solid #ccc;
+		}
+		input[type="radio"] {
+			margin-right: 1.5em;
+			margin-bottom: 1.2em;
+		}
+		legend {
+			font-weight: bold;
+		}
+		span.required {
+			font-size: 0.75em;
+			color:#760000;
+			font-style: italic;
+		}
+		input#name:focus,
+		input#email:focus,
+		input#web:focus,
+		textarea:focus {
+			background-color: #ffc;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Your Contact Details</legend>
+		<label for="name">Name:(<span class="required">Required</span>) </label>
+		<input type="text" name="name" id="name" required="required"><br>
+		<label for="email">Email Address: </label>
+		<input type="email" name="email" id="email"><br>
+		<label for="web">Web Adress: </label>
+		<input type="url" name="web" id="web">
+	</fieldset>
+	<fieldset>
+		<legend>Comments</legend>
+		<label for="comments">Message: (<span class="required">Required</span>)</label>
+		<textarea name="comments" id="comments" cols="50" rows="8" required="required"></textarea>
+	</fieldset>
+	<fieldset>
+		<legend>Remember Me</legend>
+		<label for="yes"><input type="radio" name="yes" id="yes">Yes</label>
+		<label for="no"><input type="radio" name="no" id="no" checked="checked">No</label>
+	</fieldset>
+	<input type="submit" name="submit" value="submit">
+</form>
+
+</body>
+</html>

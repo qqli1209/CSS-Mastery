@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Image Maps</title>
+
+
+<style type="text/css">
+
+.imagemap {
+  width: 333px;
+  height: 500px;
+  position: relative; /* li 的内容就可以相对于它绝对定位 */
+}
+.imagemap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.imagemap a {
+  display: block;
+  position: absolute;
+  background: url(images/shim.gif);
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: #000;
+}
+.imagemap li.rich a {
+  left: 80px;
+  top: 50px;
+}
+.imagemap .sophie a {
+  top: 90px;
+  left: 200px;
+}
+.imagemap .cath a {
+  top: 140px;
+  left: 55px;
+}
+.imagemap .james a {
+  top: 140px;
+  left: 145px;
+}
+.imagemap .paul a {
+  top: 165px;
+  left: 245px;
+}
+.imagemap a span.note {
+  border: 1px solid #000;
+}
+.imagemap a span.inner {
+  display: block;
+  width: 50px;
+  height: 60px;
+  border: 1px solid transparent;
+}
+.imagemap:hover span.inner, .imagemap:focus span.inner, .imagemap a:hover span.inner, .imagemap a:focus span.inner {
+  border:1px solid #fff;
+}
+.imagemap a span.outer {
+  display: block;
+  border: 1px solid transparent;
+}
+.imagemap:hover span.outer, .imagemap:focus span.outer, .imagemap a:hover span.outer, .imagemap a:focus span.outer {
+  border:1px solid #000;
+}
+.imagemap a:hover, .imagemap a:focus {
+  border: 1px solid #d4d82d;
+}
+.imagemap a span.note {
+  position: absolute;
+  color: #333;
+  display: block;
+  width: 7em;
+  background-color: #ffc;
+  text-align: center;
+  padding: 0.2em 0.5em;
+  bottom: -3em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin-left: -4em;
+  left: -1000em;
+}
+.imagemap a:hover span.note, .imagemap a:focus span.note {
+  left: 25px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="imagemap">
+<img src="images/nerdcore.jpg" width="333" height="500" alt="Some of the Clearleft team" />
+<ul>
+<li class="rich">
+  <a href="http://www.clagnut.com/" title="Richard Rutter">
+  <span class="outer">
+  <span class="inner">
+  <span class="note">Richard Rutter</span>
+  </span>
+  </span>
+  </a>
+</li>
+
+<li class="sophie">
+  <a href="http://www.wellieswithwings.org/" title="Sophie Barrett">
+  <span class="outer">
+  <span class="inner">
+  <span class="note">Sophie Barrett</span>
+  </span>
+  </span>
+  </a>
+</li>
+
+<li class="cath">
+  <a href="http://www.electricelephant.com/" title="Cathy Jones">
+  <span class="outer">
+  <span class="inner">
+  <span class="note">Cathy Jones</span>
+  </span>
+  </span>
+  </a>
+</li>
+
+<li class="james">
+<a href="http://www.jeckecko.net/blog/" title="James Box">
+  <span class="outer">
+  <span class="inner">
+  <span class="note">James Box</span>
+  </span>
+  </span>
+</a>
+</li>
+
+<li class="paul">
+  <a href="http://twitter.com/nicepaul" title="Paul Annett">
+  <span class="outer">
+  <span class="inner">
+  <span class="note">Paul Annett</span>
+  </span>
+  </span>
+  </a>
+</li>
+
+</ul>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>calender</title>
+	<style type="text/css">
+		body {
+			font-family: "myriad pro", arial, helvetica, sans-serif;
+		    font-size:16px;
+		    line-height:1.125em; /* Baseline grid of 18px */
+		}
+		table.cal {
+			border-collapse: separate;
+			border-spacing: 0;
+			text-align: center;
+			color: #333;
+			width: 18em;
+		}
+		table.cal th, table.cal td {
+			margin: 0;
+			padding: 0;
+		}
+		table.cal caption {
+			font-size: 1.3em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			font-weight: bold;
+		}
+		table.cal a {
+			text-decoration: none;
+		}
+		table.cal caption a {
+			padding: 0.1em 0.2em;
+			background-color: #ccc;
+			color: #000;
+		}
+		table.cal caption a:hover,
+		table.cal caption a:focus,
+		table.cal caption a:active {
+			background-color: #00f;
+			color: #fff;
+		}
+		table.cal caption a[rel="prev"] {
+			margin-left: 2em;
+			float: left;
+		}
+		table.cal caption a[rel="next"] {
+			margin-right: 2em;
+			float: right;
+		}
+		table.cal tbody {
+			color: #999;
+		}
+		table.cal tbody td {
+			padding: 1px;
+		}
+		table.cal tbody a {
+			display: block;
+			padding: 0.5em;
+			color: #000;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		.cal .selected a,
+		.cal .selected a:hover,
+		.cal .selected a:focus {
+			color: #fff;
+			background-color: #00f;
+		}
+		.cal tbody a:hover,
+		.cal tbody a:focus,
+		.cal tbody a:active {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+<table class="cal" summary="A calender style date picker" cellspacing="0">
+	<caption>
+		<a href="#" rel="prev">&lt;</a> Febrary 2017 
+		<a href="#" rel="next">&gt;</a>
+	</caption>
+	<colgroup>
+		<col id="sun">
+		<col id="mon">
+		<col id="tue">
+		<col id="wed">
+		<col id="thur">
+		<col id="fri">
+		<col id="sat">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">S</th>
+			<th scope="col">M</th>
+			<th scope="col">T</th>
+			<th scope="col">W</th>
+			<th scope="col">T</th>
+			<th scope="col">F</th>
+			<th scope="col">S</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>29</td>
+			<td>30</td>
+			<td>31</td>
+			<td><a href="#">1</a></td>
+			<td><a href="#">2</a></td>
+			<td><a href="#">3</a></td>
+			<td><a href="#">4</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">5</a></td>
+			<td><a href="#">6</a></td>
+			<td><a href="#">7</a></td>
+			<td class="selected"><a href="#">8</a></td>
+			<td><a href="#">9</a></td>
+			<td><a href="#">10</a></td>
+			<td><a href="#">11</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">12</a></td>
+			<td><a href="#">13</a></td>
+			<td><a href="#">14</a></td>
+			<td><a href="#">15</a></td>
+			<td><a href="#">16</a></td>
+			<td><a href="#">17</a></td>
+			<td><a href="#">18</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">19</a></td>
+			<td><a href="#">20</a></td>
+			<td><a href="#">21</a></td>
+			<td><a href="#">22</a></td>
+			<td><a href="#">23</a></td>
+			<td><a href="#">24</a></td>
+			<td><a href="#">25</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">26</a></td>
+			<td><a href="#">27</a></td>
+			<td><a href="#">28</a></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

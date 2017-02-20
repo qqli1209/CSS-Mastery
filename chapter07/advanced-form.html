@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>advanced form</title>
+	<style type="text/css">
+		body {
+			font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+		}
+		form {
+		  	font-size: 1.4em;
+			width: 45em;
+		}
+		fieldset {
+			margin: 1em 0;
+			padding: 1.3em 1em;
+			border: 1px solid #ccc;
+			background-color: #f8f8f8;
+		}
+		fieldset div {
+			position: relative;
+			clear: both;
+		}
+		label {
+			float: left;
+			cursor: pointer;
+			width: 10em;
+			margin-bottom: 0.8em;
+		}
+		input[type="text"] {
+			margin-bottom: 1.1em;
+			width: 20em;
+			border-top: 2px solid #999;
+			border-left: 2px solid #999;
+			border-bottom: 2px solid #ccc;
+			border-right: 2px solid #ccc;
+		}
+		select {
+			margin-bottom: 1.1em;
+		}
+		textarea {
+			height: 10em;
+			width: 95%;
+			border-top: 2px solid #999;
+			border-left: 2px solid #999;
+			border-bottom: 2px solid #ccc;
+			border-right: 2px solid #ccc;
+		}
+		input[type="radio"] {
+			margin-right: 1em;
+		}
+		legend {
+			font-weight: bold;
+		}
+		span.required {
+			font-size: 0.75em;
+			color:#760000;
+			font-style: italic;
+		}
+		em.feedback {
+			width: 10em;
+			color:#760000;
+			font-weight: bold;
+			padding-left: 20px;
+			background: url(images/error.png) no-repeat left top;
+			position: absolute;
+			top: 0.5em;
+			left: 31em;
+			right: 0;
+		}
+		input[type="text"]:focus,
+		textarea:focus {
+			background-color: #ffc;
+		}
+
+		input[name="birthDay"]{
+			width: 3em;
+			margin-right: 0.5em;
+		}
+
+		select[name="birthMonth"]{
+			width: 10em;
+			margin-right: 0.5em;
+		}
+		
+		input[name="birthYear"] {
+			width: 5em;
+			margin-right: auto;
+		}
+
+		/* submit */
+		button[type="submit"] {
+			font-size: 26px;
+			font-weight: bold;
+			background: #c5e063 url(images/button-bg.png) repeat-x bottom left;
+			border: 1px solid #989898;
+			color: #eee;
+			width: 200px;
+			height: 50px; 
+			-moz-border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+			border-radius: 0.5em;
+			-moz-box-shadow: 2px 2px 2px 2px #ccc;
+			-webkit-box-shadow: 2px 2px 2px 2px #ccc;
+			box-shadow: 2px 2px 2px 2px #ccc;
+			text-shadow: 1px 1px 1px #666;
+		}
+
+		/* favourite color */
+		fieldset#favoriteColor {
+			margin: 0;
+			padding: 0;
+			background: transparent;
+			border: none;
+		}
+		fieldset#favoriteColor h2 {
+			font-size: 1em;
+			font-weight: normal;
+			width: 10em;
+			float: left;
+		}
+		fieldset#favoriteColor .col {
+			width: 8em;
+			float: left;
+			clear: none;
+			margin-top: 1em;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>Your Contact Details</legend>
+		<div>
+			<label for="name">Name:(<span class="required">Required</span>) </label>
+			<input type="text" name="name" id="name" required="required">
+		</div>
+		<div>
+			<label for="email">Email Address is really, really, really really long:
+			<em class="feedback">Incorrect email address. Please try again.</em>
+			</label>
+			<input type="text" name="email" id="email">
+		</div>
+		<div>
+			<label for="web">Web Adress: </label>
+			<input type="text" name="web" id="web">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div>
+			<label for="birthPlace">Place of Birth:</label>
+			<select name="birthPlace" id="birthPlace">
+				<option>USA</option>
+				<option>UK</option>				
+			</select>
+		</div>
+		<div>
+			<label for="birthDay">Date of Birth:</label>
+			<input type="text" name="birthDay">
+			<select name="birthMonth" id="birthMonth">
+					<option>January </option>
+					<option>Febrary</option>
+					<option>March  </option>
+					<option>April</option>
+					<option>May</option>
+					<option>June  </option>
+					<option>July</option>					
+					<option>August </option>
+					<option>September </option>
+					<option>October</option>
+					<option>November </option>
+					<option>December</option>				
+			</select>
+			<input type="text" name="birthYear">
+		</div>
+		<fieldset id="favoriteColor">
+			<h2>Favorite Color:</h2>
+			<div class="col">
+				<label for="red"><input type="checkbox" name="red" id="red">red</label>
+				<label for="yellow"><input type="checkbox" name="yellow" id="yellow">yellow</label>
+				<label for="pink"><input type="checkbox" name="pink" id="pink">pink</label>
+				<label for="green"><input type="checkbox" name="green" id="green">green</label>
+			</div>
+			<div class="col">
+				<label for="orange"><input type="checkbox" name="orange" id="orange">orange</label>
+				<label for="purple"><input type="checkbox" name="purple" id="purple">purple</label>
+				<label for="blue"><input type="checkbox" name="blue" id="blue">blue</label>		
+				<label for="other"><input type="checkbox" name="other" id="other">other</label>
+			</div>		
+		</fieldset>
+	</fieldset>
+
+	<fieldset>
+		<legend>Comments</legend>
+		<div>
+			<label for="comments">Message: (<span class="required">Required</span>)</label>
+			<textarea name="comments" id="comments" cols="20" rows="10" required="required"></textarea>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Remember Me</legend>
+		<div>
+			<label for="yes"><input type="radio" name="remember" id="yes">Yes</label>
+		</div>
+		<div>
+			<label for="no"><input type="radio" name="remember" id="no" checked="checked">No</label>
+		</div>
+	</fieldset>
+
+	<div>
+		<button type="submit">Book Now »</button>
+	</div>
+</form>
+
+</body>
+</html>

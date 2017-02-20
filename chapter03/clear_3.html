@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clear_3</title>
+	<style type="text/css">
+		.news {
+			background-color: gray;
+			border: 1px solid black;
+		}
+		img {
+			float: left;
+		}
+		p {
+			float: right;
+		}
+		.news:after {
+			content: ".";
+			clear: both;
+			visibility: hidden;
+			display: block;
+			height: 0;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+<div class="news">
+	<img src="images/segway1.jpg">
+	<p>some text</p>
+</div>
+</body>
+</html>

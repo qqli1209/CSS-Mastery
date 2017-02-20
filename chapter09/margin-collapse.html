@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>margin-collapse</title>
+	<style type="text/css">
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		body {
+		  font: 100%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+		  color: #353535;
+		  padding: 1em;
+		}
+
+		h1 {
+		  font-size: 2.4em;
+		  font-weight: normal;
+		}
+
+		.wrapper {
+			margin: 20px;
+			width: 420px;
+			border: 1px solid #000;
+		}
+
+		#box1 {
+			margin: 10px;
+			background-color: #d5d5d5;
+		}
+		p {
+			background-color: #90C2F3;
+			margin: 20px;
+		}
+
+		#box2 {
+			margin: 10px;
+			background-color: #d5d5d5;
+			padding: 1px;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div id="box1">
+		<p>This paragraph has a 20px margin.</p>
+	</div>
+</div>
+
+<div class="wrapper">
+	<div id="box2">
+		<p>This paragraph has a 20px margin.</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>elastic 3 cols</title>
+  <style type="text/css">
+  /* reset */
+     * {
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+      font: 62.5%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+      background-color:#D4D4D4;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 2.0em;
+      font-weight: normal;
+    }
+
+    p, li {
+      font-size: 1.4em;
+    }
+
+    h1, h2, p {
+      margin: 1em 0;
+    }
+
+    .branding h1 {
+      margin: 0;
+    }
+
+    /* .wrapper center */
+    .wrapper {
+      background-color: #fff;
+      width: 92em;
+      margin: 0 auto;
+      text-align: left;
+      max-width: 95%;
+    }
+    .wrapper .content {
+      overflow: hidden;
+    }
+    .wrapper .header{
+      padding: 2em;
+      background-color: #b0b0b0;
+      height: 5em;
+    }
+    .wrapper .footer {
+      padding: 1px 2em;
+      background-color: #b0b0b0;
+    }
+
+    /* 2 col display */
+    /* .wrapper .primary 有时不行 */
+    .content .primary{
+      width: 72.82%;
+      float: right;
+    }
+
+    /* .wrapper .primary 有时不行 */
+    .content .secondary {
+      width: 25%;
+      float: left;
+    }
+    /*.warpper .secondary .promo 有时不行*/
+    .content .secondary .promo {
+      padding-left: 5%;
+    }
+
+    /* ul style */
+    ul.nav {
+      padding: 2em;
+      list-style: none;
+      background-color: #eee;
+    }
+
+    /* 3 cols display */
+    .content .primary .pri-primary {
+      width: 59.7%;
+      float: left;
+    }
+    .content .primary .pri-secondary {
+      width: 34.32%;
+      float: right;
+      padding-right: 2em;
+    }
+    
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>Branding</h1>
+  </div>
+  <div class="content">
+    <div class="primary">
+      <div class="pri-primary">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+
+        <h2>Ea commodo consequat</h2>
+        <p>Ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+
+        <p>Ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+      </div>
+      <div class="pri-secondary">
+         <h2>Magna aliquam erat volutpat</h2>
+        <p>Magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+        <p>Aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="secondary">
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Case Studies</a></li>
+      </ul>
+      <div class="promo">
+        <p>Promo item goes here</p>
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+</div>
+
+</body>
+</html>
